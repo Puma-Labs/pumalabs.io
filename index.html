@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTC+2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma Labs</title>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav a {
+            margin: 0 25px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+        }
+
+        .content img {
+            max-width: 230px; /*size of the logo*/
+            margin-bottom: 15px;
+        }
+
+        .content h1 {
+            font-size: 55px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .content p {
+            font-size: 24px;
+            margin: 10px 0 0 0;
+            color: #ffffff;
+        }
+
+        footer {
+            width: 100%;
+            padding: 5px 0;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+        }
+
+        .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.42); /* Change the color and opacity as needed */
+            z-index: 2;
+            pointer-events: none; /* Make sure the overlay doesn't block interactions */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://github.com/bersonio">CEO</a>
+            <a href="https://t.me/vberson">Telegram</a>
+            <a href="https://wa.me/972547999309">WhatsApp</a>
+            <a href="https://github.com/Puma-Labs">GitHub</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <img src="img/logo_shield_only.png" alt="Puma Labs Logo">
+        <h1>Puma Labs</h1>
+        <p>Product R&D For Entrepreneurs & Startups</p>
+    </div>
+
+    <footer>
+        <!--suppress HtmlDeprecatedAttribute -->
+        <p align="center">2024, Puma Labs</p>
+    </footer>
+
+    <video autoplay muted loop>
+        <source src="video/videoplayback2.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</body>
+</html>
