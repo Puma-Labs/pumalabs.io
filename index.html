@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTC+2">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puma Labs</title>
 
     <style>
+        /* Общие стили для всех размеров экранов */
         body, html {
             margin: 0;
             padding: 0;
@@ -47,7 +48,7 @@
         }
 
         .content img {
-            max-width: 230px; /*size of the logo*/
+            max-width: 230px; /* размер логотипа */
             margin-bottom: 15px;
         }
 
@@ -87,9 +88,38 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.42); /* Change the color and opacity as needed */
+            background: rgba(0, 0, 0, 0.54); /* Измените цвет и прозрачность по необходимости */
             z-index: 2;
-            pointer-events: none; /* Make sure the overlay doesn't block interactions */
+            pointer-events: none; /* Убедитесь, что оверлей не блокирует взаимодействия */
+        }
+
+        /* Медиа-запросы для разных размеров экранов */
+        @media only screen and (max-width: 768px) {
+            .content h1 {
+                font-size: 40px;
+            }
+            .content p {
+                font-size: 18px;
+            }
+            header nav a {
+                margin: 0 15px;
+                font-size: 12px;
+            }
+            .content img {
+                max-width: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .content h1 {
+                font-size: 32px;
+            }
+            .content p {
+                font-size: 16px;
+            }
+            .content img {
+                max-width: 120px;
+            }
         }
     </style>
 </head>
