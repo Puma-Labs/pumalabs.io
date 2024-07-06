@@ -24,18 +24,38 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.7); /* Увеличим прозрачность фона */
+            padding: 30px 0; /* Увеличим верхний и нижний отступы */
             position: absolute;
             top: 0;
             z-index: 10;
         }
 
-        header nav a {
-            margin: 0 25px;
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
             color: #ffffff;
             text-decoration: none;
             font-size: 15px;
+        }
+
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .burger div {
+            width: 20px; /* Уменьшим ширину */
+            height: 2px; /* Уменьшим высоту */
+            background-color: #ffffff;
+            margin: 3px 0; /* Уменьшим расстояние между полосками */
         }
 
         .content {
@@ -95,16 +115,42 @@
 
         /* Медиа-запросы для разных размеров экранов */
         @media only screen and (max-width: 768px) {
+            header {
+                justify-content: space-between;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            nav {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 20px;
+                background: rgba(0, 0, 0, 0.9);
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            nav a {
+                margin: 10px 0;
+                font-size: 18px;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
             .content h1 {
                 font-size: 40px;
             }
+
             .content p {
                 font-size: 18px;
             }
-            header nav a {
-                margin: 0 15px;
-                font-size: 12px;
-            }
+
             .content img {
                 max-width: 150px;
             }
@@ -114,9 +160,11 @@
             .content h1 {
                 font-size: 32px;
             }
+
             .content p {
                 font-size: 16px;
             }
+
             .content img {
                 max-width: 120px;
             }
@@ -125,6 +173,11 @@
 </head>
 <body>
     <header>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <nav>
             <a href="https://github.com/bersonio" target="_blank">CEO</a>
             <a href="https://t.me/vberson" target="_blank">Telegram</a>
@@ -140,7 +193,6 @@
     </div>
 
     <footer>
-        <!--suppress HtmlDeprecatedAttribute -->
         <p align="center">2024, Puma Labs</p>
     </footer>
 
@@ -148,5 +200,12 @@
         <source src="video/videoplayback2.mp4" type="video/mp4">
     </video>
     <div class="video-overlay"></div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
