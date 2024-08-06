@@ -1,0 +1,28 @@
+[debug] [2024-08-06T03:52:50.996Z] ----------------------------------------------------------------------
+[debug] [2024-08-06T03:52:51.000Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js login --no-localhost
+[debug] [2024-08-06T03:52:51.001Z] CLI Version:   13.13.1
+[debug] [2024-08-06T03:52:51.001Z] Platform:      linux
+[debug] [2024-08-06T03:52:51.001Z] Node Version:  v18.19.1
+[debug] [2024-08-06T03:52:51.002Z] Time:          Tue Aug 06 2024 03:52:51 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-08-06T03:52:51.002Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[debug] [2024-08-06T03:52:57.930Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2024-08-06T03:52:57.931Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"ce74b26c-6d62-4dbc-963d-708dc41b7050"}
+[debug] [2024-08-06T03:52:58.310Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2024-08-06T03:52:58.311Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"xHtA9aCaCS1kRW-wktOTs2lcfAbQlDRh7YnZA0JdzqE"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    CE74B
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=xRjL1thq-wZQDaFssgdRjPnVmSBOEUmr0Xn9Eo7Y0sE&session=ce74b26c-6d62-4dbc-963d-708dc41b7050&attest=xHtA9aCaCS1kRW-wktOTs2lcfAbQlDRh7YnZA0JdzqE
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
