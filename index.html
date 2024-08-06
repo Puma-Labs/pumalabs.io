@@ -28,9 +28,9 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center; /* Центрирование содержимого по вертикали */
+            align-items: center;
             background: var(--background-color);
-            padding: 15px 0; /* Обеспечивает равные отступы сверху и снизу */
+            padding: 15px 0;
             position: absolute;
             top: 0;
             z-index: 10;
@@ -40,7 +40,7 @@
         nav {
             display: flex;
             gap: 25px;
-            align-items: center; /* Центрирование ссылок по вертикали */
+            align-items: center;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -56,7 +56,7 @@
             cursor: pointer;
             position: absolute;
             left: 20px;
-            top: 50%; /* Центрирование бургер-меню по вертикали */
+            top: 50%;
             transform: translateY(-50%);
             z-index: 11;
         }
@@ -76,12 +76,12 @@
             align-items: center;
             z-index: 5;
             text-align: center;
-            padding-top: 100px; /* Отступ сверху для подстраховки */
+            padding-top: 100px;
             box-sizing: border-box;
         }
 
         .content img {
-            max-width: 60%; /* Увеличим размер логотипа для настольных версий */
+            max-width: 30%; /* Уменьшим размер логотипа для настольных версий */
             margin-bottom: 50px;
         }
 
@@ -131,7 +131,7 @@
         @media only screen and (max-width: 768px) {
             header {
                 justify-content: space-between;
-                padding: 15px 20px; /* Дополнительный отступ для мобильных устройств */
+                padding: 15px 20px;
             }
 
             .burger {
@@ -169,7 +169,7 @@
             }
 
             .content img {
-                max-width: 150%; /* Увеличим размер логотипа для планшетов */
+                max-width: 50%; /* Уменьшим размер логотипа для планшетов */
             }
         }
 
@@ -183,7 +183,7 @@
             }
 
             .content img {
-                max-width: 150%; /* Значительное увеличение размера логотипа для мобильных устройств */
+                max-width: 60%; /* Уменьшим размер логотипа для мобильных устройств */
             }
         }
     </style>
