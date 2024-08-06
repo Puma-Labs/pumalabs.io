@@ -28,18 +28,20 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            align-items: center; /* Центрирование содержимого по вертикали */
             background: var(--background-color);
-            padding: 30px 0;
+            padding: 15px 0; /* Обеспечивает равные отступы сверху и снизу */
             position: absolute;
             top: 0;
             z-index: 10;
+            box-sizing: border-box;
         }
 
         nav {
             display: flex;
             gap: 25px;
+            align-items: center; /* Центрирование ссылок по вертикали */
             transition: transform 0.3s ease-in-out;
-            transform: translateY(-100%);
         }
 
         nav a {
@@ -54,7 +56,8 @@
             cursor: pointer;
             position: absolute;
             left: 20px;
-            top: 20px;
+            top: 50%; /* Центрирование бургер-меню по вертикали */
+            transform: translateY(-50%);
             z-index: 11;
         }
 
@@ -72,6 +75,9 @@
             justify-content: center;
             align-items: center;
             z-index: 5;
+            text-align: center;
+            padding-top: 100px; /* Отступ сверху для подстраховки */
+            box-sizing: border-box;
         }
 
         .content img {
@@ -125,6 +131,7 @@
         @media only screen and (max-width: 768px) {
             header {
                 justify-content: space-between;
+                padding: 15px 20px; /* Дополнительный отступ для мобильных устройств */
             }
 
             .burger {
@@ -198,6 +205,8 @@
 
     <main class="content">
         <img src="img/pumalogo_01.png" alt="Puma Labs Logo">
+        <h1>Welcome to Puma Labs</h1>
+        <p>Innovating the Future</p>
     </main>
 
     <footer>
