@@ -13,7 +13,7 @@
             --nav-gap-desktop: 25px;
             --nav-gap-mobile: 15px;
             --logo-max-width-desktop: 30%;
-            --logo-max-width-mobile: 50%;
+            --logo-max-width-mobile: 100%; /* 2x increase from the previous mobile size */
         }
 
         body, html {
@@ -125,7 +125,7 @@
             }
 
             .content img {
-                max-width: var(--logo-max-width-mobile);
+                max-width: 85%; /* Increased size for tablets */
             }
         }
 
@@ -149,7 +149,7 @@
             }
 
             .content img {
-                max-width: var(--logo-max-width-mobile);
+                max-width: var(--logo-max-width-mobile); /* Increased size for mobile devices */
             }
         }
     </style>
