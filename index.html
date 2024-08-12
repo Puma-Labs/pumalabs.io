@@ -8,9 +8,16 @@
         :root {
             --primary-color: #ffffff;
             --background-color: rgba(0, 0, 0, 0.7);
+            --font-size-desktop: 15px;
+            --font-size-mobile: 12px;
+            --nav-gap-desktop: 25px;
+            --nav-gap-mobile: 10px;
+            --logo-max-width-desktop: 30%;
+            --logo-max-width-mobile: 80%;
+            --content-padding-top-mobile: 10vh;
+            --content-padding-top-tablet: 5vh;
         }
 
-        /* Общие стили для всех размеров экранов */
         body, html {
             margin: 0;
             padding: 0;
@@ -18,11 +25,11 @@
             height: 100%;
             font-family: 'Arial', sans-serif;
             color: var(--primary-color);
-            overflow: hidden;
+            background-color: #000;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #000; /* Background color for any extra space */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
         header {
@@ -35,20 +42,20 @@
             position: absolute;
             top: 0;
             z-index: 10;
-            box-sizing: border-box;
         }
 
         nav {
             display: flex;
-            gap: 25px;
+            gap: var(--nav-gap-desktop);
             align-items: center;
+            flex-wrap: wrap; /* Allow wrapping for small screens */
             transition: transform 0.3s ease-in-out;
         }
 
         nav a {
             color: var(--primary-color);
             text-decoration: none;
-            font-size: 15px;
+            font-size: var(--font-size-desktop);
         }
 
         .content {
@@ -59,25 +66,13 @@
             align-items: center;
             z-index: 5;
             text-align: center;
+            padding-top: var(--content-padding-top-tablet); /* Use padding for centering */
             box-sizing: border-box;
-            min-height: 100vh; /* Ensure full viewport height */
         }
 
         .content img {
-            max-width: 30%; /* Size for desktop */
+            max-width: var(--logo-max-width-desktop);
             margin-bottom: 20px;
-        }
-
-        .content h1 {
-            font-size: 55px;
-            margin: 0;
-            color: var(--primary-color);
-        }
-
-        .content p {
-            font-size: 24px;
-            margin: 10px 0 0 0;
-            color: var(--primary-color);
         }
 
         footer {
@@ -113,50 +108,33 @@
         /* Медиа-запросы для разных размеров экранов */
         @media only screen and (max-width: 768px) {
             header {
-                justify-content: center;
                 padding: 15px 20px;
             }
 
             nav {
-                flex-direction: row;
-                gap: 15px;
+                gap: var(--nav-gap-mobile);
             }
 
             nav a {
-                font-size: 14px;
+                font-size: var(--font-size-mobile);
             }
 
             .content {
-                padding-top: 50px; /* Additional top padding to adjust position */
+                padding-top: var(--content-padding-top-mobile);
             }
 
             .content img {
-                max-width: 70%; /* Adjusted size for tablets */
-                margin-bottom: 20px;
+                max-width: var(--logo-max-width-mobile);
             }
         }
 
         @media only screen and (max-width: 480px) {
-            header {
-                justify-content: center;
-            }
-
-            nav {
-                flex-direction: row;
-                gap: 10px;
-            }
-
-            nav a {
-                font-size: 12px;
-            }
-
             .content {
-                padding-top: 40px; /* Additional top padding to adjust position */
+                padding-top: var(--content-padding-top-mobile);
             }
 
             .content img {
-                max-width: 80%; /* Increased size for mobile devices */
-                margin-bottom: 20px;
+                max-width: var(--logo-max-width-mobile);
             }
         }
     </style>
