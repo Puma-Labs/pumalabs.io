@@ -51,24 +51,6 @@
             font-size: 15px;
         }
 
-        .burger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 11;
-        }
-
-        .burger div {
-            width: 20px;
-            height: 2px;
-            background-color: var(--primary-color);
-            margin: 3px 0;
-        }
-
         .content {
             flex: 1;
             display: flex;
@@ -131,50 +113,38 @@
         /* Медиа-запросы для разных размеров экранов */
         @media only screen and (max-width: 768px) {
             header {
-                justify-content: space-between;
+                justify-content: center;
                 padding: 15px 20px;
             }
 
-            .burger {
-                display: flex;
-            }
-
             nav {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 20px;
-                background: rgba(0, 0, 0, 0.9);
-                padding: 10px;
-                border-radius: 5px;
-                transform: translateY(-100%);
+                flex-direction: row;
+                gap: 15px;
             }
 
             nav a {
-                margin: 10px 0;
-                font-size: 18px;
-            }
-
-            nav.active {
-                display: flex;
-                transform: translateY(0);
-            }
-
-            .content h1 {
-                font-size: 40px;
-            }
-
-            .content p {
-                font-size: 18px;
+                font-size: 14px;
             }
 
             .content img {
-                max-width: 100%; /* Adjusted size for tablets */
+                max-width: 80%; /* Adjusted size for tablets */
             }
         }
 
         @media only screen and (max-width: 480px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
             .content h1 {
                 font-size: 32px;
             }
@@ -184,18 +154,13 @@
             }
 
             .content img {
-                max-width: 100%; /* Adjusted size for mobile devices */
+                max-width: 75%; /* Adjusted size for mobile devices */
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="burger" aria-label="Toggle menu" role="button">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
         <nav>
             <a href="https://github.com/bersonio" target="_blank">CEO</a>
             <a href="https://www.linkedin.com/company/pumalabs" target="_blank">LinkedIn</a>
@@ -216,14 +181,5 @@
         <source src="video/videoplayback2.mp4" type="video/mp4">
     </video>
     <div class="video-overlay"></div>
-
-    <script>
-        document.querySelector('.burger').addEventListener('click', toggleMenu);
-
-        function toggleMenu() {
-            const nav = document.querySelector('header nav');
-            nav.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
