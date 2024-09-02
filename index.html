@@ -13,7 +13,7 @@
             --nav-gap-desktop: 25px;
             --nav-gap-mobile: 15px;
             --logo-max-width-desktop: 30%;
-            --logo-max-width-mobile: 100%; /* 2x increase from the previous mobile size */
+            --logo-max-width-mobile: 100%;
         }
 
         body, html {
@@ -83,7 +83,20 @@
             bottom: 0;
             z-index: 10;
             text-align: center;
-            flex-wrap: wrap
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer img {
+            max-width: 150px;
+            height: auto;
         }
 
         video {
@@ -128,6 +141,15 @@
             .content img {
                 max-width: 85%; /* Increased size for tablets */
             }
+
+            footer {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            footer img {
+                max-width: 100px;
+            }
         }
 
         @media only screen and (max-width: 480px) {
@@ -150,7 +172,11 @@
             }
 
             .content img {
-                max-width: var(--logo-max-width-mobile); /* Increased size for mobile devices */
+                max-width: var(--logo-max-width-mobile);
+            }
+
+            footer img {
+                max-width: 80px;
             }
         }
     </style>
@@ -170,9 +196,10 @@
     </main>
 
     <footer>
-    <div>
-        <p>2024, Puma Labs</p> <a href="https://www.digitalocean.com/?refcode=9fe481cfbee3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
-    </div>
+        <p>2024, Puma Labs</p>
+        <a href="https://www.digitalocean.com/?refcode=9fe481cfbee3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge">
+            <img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" />
+        </a>
     </footer>
 
     <video autoplay muted loop>
