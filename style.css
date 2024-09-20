@@ -25,19 +25,30 @@ body, html {
     overflow-x: hidden;
 }
 
+/* Header with logo and navigation */
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* To place logo on top of navigation */
     align-items: center;
     background: var(--background-color);
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     z-index: 10;
     box-sizing: border-box;
 }
 
+/* Logo positioning */
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Navigation menu */
 nav {
     display: flex;
     gap: var(--nav-gap-desktop);
@@ -61,6 +72,7 @@ nav a.active {
     border-bottom: 2px solid var(--secondary-color); /* Подсветка активной ссылки */
 }
 
+/* Content section */
 .content {
     flex: 1;
     display: flex;
