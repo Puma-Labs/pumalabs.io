@@ -92,6 +92,10 @@ nav a.active {
     loading: lazy; /* Lazy loading для изображений */
 }
 
+.skyblue-text {
+    color: rgb(0, 255, 255);
+}
+
 footer {
     width: 100%;
     padding: 5px 0;
