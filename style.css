@@ -48,6 +48,11 @@ nav a {
     color: var(--primary-color);
     text-decoration: none;
     font-size: var(--font-size-desktop);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f0f0f0;
 }
 
 .content {
@@ -66,6 +71,7 @@ nav a {
 .content img {
     max-width: var(--logo-max-width-desktop);
     margin-bottom: 20px;
+    loading: lazy; /* Lazy loading для изображений */
 }
 
 footer {
@@ -90,6 +96,7 @@ footer p {
 footer img {
     max-width: 150px;
     height: auto;
+    loading: lazy; /* Lazy loading для изображений */
 }
 
 video {
@@ -99,6 +106,7 @@ video {
     min-width: 100%;
     min-height: 100%;
     z-index: 1;
+    playsinline: true; /* Видео будет воспроизводиться корректно на всех устройствах */
 }
 
 .video-overlay {
@@ -110,6 +118,13 @@ video {
     background: rgba(0, 0, 0, 0.54);
     z-index: 2;
     pointer-events: none;
+}
+
+/* Адаптивные стили для больших экранов */
+@media only screen and (min-width: 1200px) {
+    .content img {
+        max-width: 25%;
+    }
 }
 
 /* Mobile styles */
