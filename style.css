@@ -112,7 +112,7 @@ footer p {
 }
 
 footer img {
-    max-width: 150px;
+    max-width: 70px;
     height: auto;
     loading: lazy; /* Lazy loading для изображений */
 }
@@ -251,4 +251,3 @@ header.scrolled {
 html {
     scroll-behavior: smooth;
 }
-
