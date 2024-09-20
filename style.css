@@ -1,5 +1,6 @@
 :root {
     --primary-color: #ffffff;
+    --secondary-color: #a792f7;
     --background-color: rgba(0, 0, 0, 0.7);
     --font-size-desktop: 15px;
     --font-size-mobile: 14px;
@@ -9,12 +10,13 @@
     --logo-max-width-mobile: 100%;
 }
 
+/* Gugi применяется ко всему тексту */
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Gugi', sans-serif; /* Шрифт Gugi применяется ко всему сайту */
     color: var(--primary-color);
     background-color: #000;
     display: flex;
@@ -52,11 +54,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #b253ff;
+    color: var(--secondary-color);
 }
 
 nav a.active {
-    border-bottom: 2px solid #b253ff; /* Подсветка активной ссылки */
+    border-bottom: 2px solid var(--secondary-color); /* Подсветка активной ссылки */
 }
 
 .content {
@@ -175,7 +177,7 @@ video {
     }
 
     nav a {
-        font-size: var(--font-size-mobile);
+        font-size: 16px; /* Увеличен размер шрифта на маленьких экранах */
     }
 
     .content {
@@ -206,10 +208,34 @@ video {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для кнопки */
 }
 
 .cta-button:hover {
-    background-color: #a792f7;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Увеличение тени при наведении */
 }
 
+/* Элементы по умолчанию невидимы */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Когда элемент становится видимым */
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Более тёмный фон при прокрутке */
+    transition: background-color 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
