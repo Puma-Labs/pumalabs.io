@@ -1,0 +1,48 @@
+name: Apply Phase1 payloads
+on:
+  push:
+    branches: [feat/phase1-site-improvements]
+    paths:
+      - 'phase1-payloads/**'
+      - '.github/workflows/apply-phase1.yml'
+  workflow_dispatch:
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/phase1-site-improvements
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Decode payloads into live files
+        run: |
+          set -euo pipefail
+          decode() {
+            local dest="$1" src="$2"
+            if [ ! -f "$src" ]; then echo "skip missing $src"; return 0; fi
+            tr -d '\n\r ' < "$src" | base64 -d | gzip -dc > "$dest"
+            echo "wrote $dest $(wc -c < "$dest") bytes"
+          }
+          decode he/index.html phase1-payloads/he.index.html.gz.b64
+          decode ru/index.html phase1-payloads/ru.index.html.gz.b64
+          decode index.html phase1-payloads/en.index.html.gz.b64
+          ls -la he/index.html ru/index.html index.html assets/phase1.css || true
+          grep -q 'operating-cases' he/index.html
+          grep -q 'abcc-packages' he/index.html
+          grep -q 'abcc-packages' ru/index.html
+          grep -q 'assets/phase1.css' index.html
+          grep -q 'assets/phase1.css' he/index.html
+          grep -q 'assets/phase1.css' ru/index.html
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add he/index.html ru/index.html index.html || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "feat: Phase 1 — apply HE/RU/EN homes from staged payloads"
+            git push
+          fi
