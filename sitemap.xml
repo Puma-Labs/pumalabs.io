@@ -4,7 +4,7 @@
     <loc>https://hellsec.dev/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/" />
@@ -14,7 +14,7 @@
     <loc>https://hellsec.dev/ru/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/" />
@@ -24,7 +24,7 @@
     <loc>https://hellsec.dev/he/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/" />
@@ -34,7 +34,7 @@
     <loc>https://hellsec.dev/services/ai-business-control-center/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/ai-business-control-center/" />
@@ -44,7 +44,7 @@
     <loc>https://hellsec.dev/ru/services/ai-business-control-center/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/ai-business-control-center/" />
@@ -54,17 +54,137 @@
     <loc>https://hellsec.dev/he/services/ai-business-control-center/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/ai-business-control-center/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/ai-business-control-center/" />
   </url>
   <url>
+    <loc>https://hellsec.dev/services/cybersecurity/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/cybersecurity/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/ru/services/cybersecurity/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/cybersecurity/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/he/services/cybersecurity/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/cybersecurity/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/cybersecurity/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/services/automation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/automation/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/ru/services/automation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/automation/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/he/services/automation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/automation/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/automation/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/services/osint/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/osint/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/ru/services/osint/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/osint/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/he/services/osint/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/osint/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/osint/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/services/product-rd/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/product-rd/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/ru/services/product-rd/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/product-rd/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/he/services/product-rd/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/services/product-rd/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/services/product-rd/" />
+  </url>
+  <url>
     <loc>https://hellsec.dev/cases/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/" />
@@ -74,7 +194,7 @@
     <loc>https://hellsec.dev/ru/cases/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/" />
@@ -84,23 +204,17 @@
     <loc>https://hellsec.dev/he/cases/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/cases/" />
   </url>
   <url>
-    <loc>https://hellsec.dev/privacy.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <lastmod>2026-08-22</lastmod>
-  </url>
-  <url>
     <loc>https://hellsec.dev/cases/clinic-control-layer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/clinic-control-layer/" />
@@ -110,7 +224,7 @@
     <loc>https://hellsec.dev/ru/cases/clinic-control-layer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/clinic-control-layer/" />
@@ -120,7 +234,7 @@
     <loc>https://hellsec.dev/he/cases/clinic-control-layer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/clinic-control-layer/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/clinic-control-layer/" />
@@ -130,7 +244,7 @@
     <loc>https://hellsec.dev/cases/service-follow-up-system/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/service-follow-up-system/" />
@@ -140,7 +254,7 @@
     <loc>https://hellsec.dev/ru/cases/service-follow-up-system/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/service-follow-up-system/" />
@@ -150,7 +264,7 @@
     <loc>https://hellsec.dev/he/cases/service-follow-up-system/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/service-follow-up-system/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/service-follow-up-system/" />
@@ -160,7 +274,7 @@
     <loc>https://hellsec.dev/cases/secure-handover-baseline/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/secure-handover-baseline/" />
@@ -170,7 +284,7 @@
     <loc>https://hellsec.dev/ru/cases/secure-handover-baseline/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/secure-handover-baseline/" />
@@ -180,10 +294,40 @@
     <loc>https://hellsec.dev/he/cases/secure-handover-baseline/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-09-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/cases/secure-handover-baseline/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/cases/secure-handover-baseline/" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/privacy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/privacy.html" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/ru/privacy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/privacy.html" />
+  </url>
+  <url>
+    <loc>https://hellsec.dev/he/privacy.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2026-09-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellsec.dev/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hellsec.dev/ru/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="he" href="https://hellsec.dev/he/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellsec.dev/privacy.html" />
   </url>
 </urlset>
