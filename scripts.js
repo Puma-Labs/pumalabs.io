@@ -211,16 +211,27 @@
     // observer failure (or a full-page render) never leaves the page blank.
     const sections = Array.from(document.querySelectorAll('.fade-in'));
     const reduceMotionReveal = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (sections.length && !reduceMotionReveal && 'IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-      sections.forEach((section) => io.observe(section));
+    if (sections.length) {
+      if (reduceMotionReveal || !('IntersectionObserver' in window)) {
+        sections.forEach((section) => section.classList.add('reveal'));
+      } else {
+        const io = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+        sections.forEach((section) => io.observe(section));
+        // Safety: never leave above-the-fold content waiting on a missed observer fire.
+        window.setTimeout(() => {
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 1.15) section.classList.add('reveal');
+          });
+        }, 900);
+      }
     }
 
     // Premium pointer glow for elevated cards. Desktop only; mobile keeps static, fast UI.
@@ -562,5 +573,73 @@
         }
       });
     })();
+
+    // Case discuss mini-forms (name + channel + context) -> sender.hellsec.dev
+    const caseForms = Array.from(document.querySelectorAll('.case-mini-form'));
+    caseForms.forEach((form) => {
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const lang = getCurrentLang();
+        const t = translations[lang] || translations.en;
+        const nameInput = form.querySelector('[name="name"]');
+        const channelInput = form.querySelector('[name="channel"]');
+        const contextInput = form.querySelector('[name="context"]');
+        const honey = form.querySelector('[name="honey"]');
+        if (honey && honey.value) return;
+        const name = (nameInput?.value || '').trim();
+        const channel = (channelInput?.value || '').trim();
+        const context = (contextInput?.value || '').trim();
+        let valid = true;
+        const setErr = (input, msg) => {
+          const group = input?.closest('.form-group');
+          const err = group ? group.querySelector('.field-error') : null;
+          if (input) {
+            if (msg) input.setAttribute('aria-invalid', 'true');
+            else input.removeAttribute('aria-invalid');
+          }
+          if (err) err.textContent = msg || '';
+        };
+        if (!name) { setErr(nameInput, t.nameRequired); valid = false; } else setErr(nameInput, '');
+        if (!channel) { setErr(channelInput, lang === 'ru' ? 'Укажите канал связи.' : lang === 'he' ? 'נא למלא ערוץ יצירת קשר.' : 'Please enter a contact channel.'); valid = false; } else setErr(channelInput, '');
+        if (context.length < 10) { setErr(contextInput, t.messageMinLength); valid = false; } else setErr(contextInput, '');
+        if (!valid) {
+          form.querySelector('[aria-invalid="true"]')?.focus();
+          return;
+        }
+        const statusEl = form.querySelector('.form-status');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn ? submitBtn.textContent : '';
+        if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = t.sending; }
+        if (statusEl) { statusEl.classList.remove('success', 'error'); statusEl.textContent = t.sending; }
+        const emailLike = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(channel);
+        const caseTitle = form.getAttribute('data-case') || document.title || 'Case discuss';
+        const payload = {
+          name,
+          email: emailLike ? channel : 'case-lead@hellsec.dev',
+          message: `Case discuss: ${caseTitle}\nPreferred channel: ${channel}\n\n${context}`.substring(0, 500),
+          lang
+        };
+        try {
+          const response = await fetch('https://sender.hellsec.dev/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (response.ok) {
+            if (statusEl) { statusEl.textContent = t.success; statusEl.classList.add('success'); statusEl.classList.remove('error'); }
+            form.reset();
+          } else {
+            const text = await response.text().catch(() => '');
+            if (statusEl) { statusEl.textContent = t.error + (text ? ` ${t.errorDetails}${text}` : ''); statusEl.classList.add('error'); statusEl.classList.remove('success');
+            }
+          }
+        } catch (err) {
+          if (statusEl) { statusEl.textContent = t.errorConnection; statusEl.classList.add('error'); statusEl.classList.remove('success'); }
+        } finally {
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        }
+      });
+    });
+
   });
 })();
